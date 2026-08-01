@@ -1,0 +1,717 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WU & The Rampant | Bingchen Wu</title>
+    <meta
+      name="description"
+      content="WU & The Rampant: the artist home of Bingchen Wu, presenting music, live work, events and the band project The Rampant."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="WU and The Rampant homepage">WU &amp; The Rampant</a>
+      <nav aria-label="Main navigation">
+        <a href="#top" data-i18n="navHome">Home</a>
+        <a href="#wu" data-i18n="navWuRampant">WU &amp; The Rampant</a>
+        <a href="#work" data-i18n="navWork">Work</a>
+        <a href="#events" data-i18n="navEvents">Events</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
+      <button class="language-toggle" type="button" aria-label="Switch to Chinese" data-lang-toggle>中文</button>
+    </header>
+    <div class="section-footnote" data-section-footnote>Home</div>
+
+    <main id="top">
+      <section class="logo-hero" aria-label="WU and The Rampant introduction" data-section-label="Home">
+        <video
+          id="hero-video"
+          class="hero-video"
+          src="assets/wu-rampant-hero.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+          poster="assets/wu-rampant-logo-web.png"
+          aria-label="WU and The Rampant promotional video"
+        ></video>
+        <button
+          class="sound-toggle"
+          type="button"
+          aria-controls="hero-video"
+          aria-pressed="false"
+          aria-label="Turn sound on"
+        >
+          <svg class="icon icon-muted" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 9v6h4l5 4V5L8 9H4z"></path>
+            <path d="M17 9l4 4m0-4l-4 4"></path>
+          </svg>
+          <svg class="icon icon-sound" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 9v6h4l5 4V5L8 9H4z"></path>
+            <path d="M17 8c1.4 1.1 2.2 2.5 2.2 4s-.8 2.9-2.2 4"></path>
+            <path d="M19.5 5.5c2.2 1.8 3.5 4 3.5 6.5s-1.3 4.7-3.5 6.5"></path>
+          </svg>
+        </button>
+        <div class="video-shade"></div>
+        <img
+          class="hero-logo"
+          src="assets/wu-rampant-logo-web.png"
+          alt="WU The Rampant logo"
+        >
+        <div class="hero-line"></div>
+        <p class="hero-kicker" data-i18n="heroKicker">A project by Bingchen Wu</p>
+        <h1>WU &amp; The Rampant</h1>
+        <p class="hero-copy" data-i18n="heroCopy">WU / The Rampant</p>
+        <div class="listen-dock" data-listen-dock>
+          <button class="hero-listen-toggle" type="button" aria-controls="listen-panel" aria-expanded="false" data-listen-toggle>
+            <span data-i18n="listenButton">Listen</span>
+          </button>
+          <div id="listen-panel" class="listen-panel" role="dialog" aria-label="WU streaming platforms" data-listen-panel hidden>
+            <button class="listen-backdrop" type="button" aria-label="Close streaming links" data-listen-close></button>
+            <div class="listen-panel-inner">
+              <button class="listen-close" type="button" aria-label="Close streaming links" data-listen-close>&times;</button>
+              <p class="section-kicker" data-i18n="listenKicker">Streaming</p>
+              <h2>WU</h2>
+              <div class="hero-platform-links listen-platform-links" aria-label="WU streaming platforms">
+                <a class="hero-platform-link hero-spotify" href="https://open.spotify.com/artist/6f2PVjcsU6NkULx05cOO6O?si=g-h91qUXRGONxNbypBCmcA" aria-label="WU Spotify">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M7.2 9.4c3.5-1 6.7-.7 9.7.9"></path>
+                    <path d="M7.8 12.3c2.8-.8 5.3-.6 7.6.7"></path>
+                    <path d="M8.4 15c2-.5 3.8-.4 5.5.5"></path>
+                  </svg>
+                  <span>Spotify</span>
+                </a>
+                <a class="hero-platform-link hero-apple" href="https://music.apple.com/cn/artist/wu/1855197101?l=en-GB" aria-label="WU Apple Music">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M9 18.2c0 1.2-1.2 2.2-2.7 2.2s-2.7-.8-2.7-2 1.2-2.2 2.7-2.2c.7 0 1.3.2 1.7.5V6.3l10.4-2v11.6c0 1.2-1.2 2.2-2.7 2.2s-2.7-.8-2.7-2 1.2-2.2 2.7-2.2c.7 0 1.3.2 1.7.5V8.1L9 9.7v8.5z"></path>
+                  </svg>
+                  <span>Apple Music</span>
+                </a>
+                <a class="hero-platform-link hero-qq" href="https://c6.y.qq.com/base/fcgi-bin/u?__=Ecum7kCyHno5" aria-label="WU QQ Music">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <text x="12" y="15.2">QQ</text>
+                  </svg>
+                  <span>QQ Music</span>
+                </a>
+                <a class="hero-platform-link hero-netease" href="https://163cn.tv/bavxg5wc" aria-label="WU NetEase Cloud Music">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <text x="12" y="15.2">云</text>
+                  </svg>
+                  <span>NetEase</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="dual-entry" aria-label="WU and The Rampant sections" data-section-label="WU & The Rampant">
+        <article id="wu" class="entry-panel wu-panel">
+          <div class="panel-media">
+            <img
+              src="assets/bingchen-wu-live-web.jpg"
+              alt="Bingchen Wu performing live with a microphone"
+            >
+          </div>
+          <img
+            class="wu-panel-mark"
+            src="assets/wu-logo-cutout.png"
+            alt="WU logo mark"
+          >
+          <div class="panel-content">
+            <p class="section-kicker" data-i18n="wuPanelKicker">Personal Section</p>
+            <h2>WU</h2>
+            <p data-i18n="wuPanelCopy">
+              Chinese/British singer, musician, guitarist, songwriter, composer and
+              producer based in Birmingham, UK.
+            </p>
+            <a class="button" href="#wu-profile" data-i18n="enterWu">Enter WU</a>
+          </div>
+        </article>
+
+        <article id="rampant" class="entry-panel rampant-panel">
+          <div class="panel-mark">
+            <img
+              src="assets/wu-rampant-logo-web.png"
+              alt="The Rampant logo mark"
+            >
+          </div>
+          <div class="panel-content">
+            <p class="section-kicker" data-i18n="rampantPanelKicker">Band Section</p>
+            <h2 data-i18n="rampantName">The Rampant</h2>
+            <p data-i18n="rampantPanelCopy">
+              A rock and metal band built around WU's original songwriting, heavy energy,
+              strong melodies and modern production.
+            </p>
+            <a class="button light" href="#rampant-profile" data-i18n="enterRampant">Enter The Rampant</a>
+          </div>
+        </article>
+      </section>
+
+      <section id="wu-profile" class="section compact-section" data-section-label="Content">
+        <div class="compact-head content-float" data-section-label="Content">
+          <h2 data-i18n="compactTitle">Content</h2>
+        </div>
+
+        <div class="compact-layout">
+          <article class="compact-column wu-compact">
+            <div class="compact-column-head">
+              <p class="section-kicker wu-heading">WU</p>
+            </div>
+
+            <details class="info-accordion" open data-section-label="Bio">
+              <summary><span class="visually-hidden" data-i18n="accordionBio">Bio</span></summary>
+              <div class="accordion-body">
+                <h3 data-i18n="wuProfileTitle">Artist, singer, guitarist, songwriter, composer and producer.</h3>
+                <p data-i18n="wuProfileCopy">
+                  Independent musician based in Birmingham, UK.
+                </p>
+                <div class="compact-profile-grid">
+                  <article>
+                    <h4 data-i18n="wuProfileCard1Title">Musical Language</h4>
+                    <p data-i18n="wuProfileCard1Copy">
+                      Rock, pop, metal and R&amp;B.
+                    </p>
+                  </article>
+                  <article>
+                    <h4 data-i18n="wuProfileCard2Title">Sound &amp; Emotion</h4>
+                    <p data-i18n="wuProfileCard2Copy">
+                      Melody, energy and emotional depth.
+                    </p>
+                  </article>
+                  <article>
+                    <h4 data-i18n="wuProfileCard3Title">Performance</h4>
+                    <p data-i18n="wuProfileCard3Copy">
+                      Festivals, live venues and original shows.
+                    </p>
+                  </article>
+                  <article>
+                    <h4 data-i18n="wuProfileCard4Title">Interactive / Design</h4>
+                    <p data-i18n="wuProfileCard4Copy">
+                      Visual-audio systems, interaction and stage identity.
+                    </p>
+                  </article>
+                </div>
+              </div>
+            </details>
+
+            <details id="work" class="info-accordion" data-section-label="Music&Work">
+              <summary><span data-i18n="accordionWorks">Music&amp;Work</span></summary>
+              <div class="accordion-body">
+                <p class="compact-lead" data-i18n="wuWorksTitle">Personal works by WU.</p>
+                <div class="work-directory">
+                  <section class="work-group">
+                    <h3 data-i18n="workCategoryMusic">Music</h3>
+                    <div class="work-list">
+                      <article class="work-list-item">
+                        <div>
+                          <h4>Younger Than Me</h4>
+                          <p data-i18n="workYoungerCopy">Anti-terrorism themed rock music.</p>
+                        </div>
+                        <a href="https://open.spotify.com/track/1YgYOnmt1HfcO7KJtt6Qhm?si=848cb269fd8d4a46">Spotify</a>
+                      </article>
+                      <article class="work-list-item">
+                        <div>
+                          <h4>Heated Heart</h4>
+                          <p data-i18n="workHeatedCopy">Soft rock music release.</p>
+                        </div>
+                        <a href="https://open.spotify.com/album/5t88Tcv0xg57aB2GLJsQo2?si=Sgm02GyTSXe1hG4xSDi_hw">Spotify</a>
+                      </article>
+                      <article class="work-list-item">
+                        <div>
+                          <h4>Love Will Keep Us Young</h4>
+                          <p data-i18n="workLoveCopy">Pop music work for streaming platforms.</p>
+                        </div>
+                        <a href="https://open.spotify.com/track/1Ii5FktzBA5UCzVLXAa2VV?si=31e07aaab4234e1b">Spotify</a>
+                      </article>
+                    </div>
+                  </section>
+                  <section class="work-group">
+                    <h3 data-i18n="workCategoryInteractive"><span class="title-line">Interactive</span><span class="title-line">Audio-Visual</span></h3>
+                    <div class="work-list">
+                      <article class="work-list-item">
+                        <div>
+                          <h4>Window</h4>
+                          <p data-i18n="workWindowCopy">Visual-audio program exploring responsive media.</p>
+                        </div>
+                        <a href="https://www.instagram.com/reel/DWExiiRiDpq/?igsh=MWF1cDQwYWJlNmZybQ==">Instagram</a>
+                      </article>
+                      <article class="work-list-item">
+                        <div>
+                          <h4>Wha Pedal</h4>
+                          <p data-i18n="workWhaCopy">Visual-audio program built around musical interaction.</p>
+                        </div>
+                        <a href="https://www.instagram.com/reel/DHPGq7iNFAk/?igsh=MWFqcXl2ZXl3cnRvMw==">Instagram</a>
+                      </article>
+                    </div>
+                  </section>
+                  <section class="work-group">
+                    <h3 data-i18n="workCategoryComposition">Composition</h3>
+                    <div class="work-list">
+                      <article class="work-list-item">
+                        <div>
+                          <h4>Various Gates</h4>
+                          <p data-i18n="workGatesCopy">Experimental composition work.</p>
+                        </div>
+                        <a href="https://youtu.be/829Ah1sxfpc?feature=shared">YouTube</a>
+                      </article>
+                      <article class="work-list-item">
+                        <div>
+                          <h4>Fluent Light</h4>
+                          <p data-i18n="workFluentCopy">Experimental and pseudo-ambient cello fusion composition.</p>
+                        </div>
+                        <a href="https://www.youtube.com/watch?v=ujAGzY3E504">YouTube</a>
+                      </article>
+                    </div>
+                  </section>
+                  <section class="work-group">
+                    <h3 data-i18n="workCategoryCollab">Work with Other Artists</h3>
+                    <div class="work-list">
+                      <article class="work-list-item">
+                        <div>
+                          <h4>Alone In The City</h4>
+                          <p data-i18n="workAloneCopy">Jazz band EP production, recording, and mixing.</p>
+                        </div>
+                        <a href="https://felixtrognitz.bandcamp.com/album/alone-in-the-city">Bandcamp</a>
+                      </article>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </details>
+
+            <details class="info-accordion photo-accordion" data-section-label="Photos">
+              <summary><span data-i18n="accordionPhotos">Photos</span></summary>
+              <div class="accordion-body">
+                <div class="photo-group">
+                  <p class="section-kicker" data-i18n="recentKicker">Recent Live</p>
+                  <div class="recent-grid collapsible-gallery" data-gallery data-initial-rows="2">
+                    <img src="assets/recent/recent-01.jpg" alt="Recent guitarist close-up in black and white">
+                    <img src="assets/recent/recent-02.jpg" alt="Recent WU vocal performance in black and white">
+                    <img src="assets/recent/recent-06.jpg" alt="Recent WU with microphone on stage">
+                    <img src="assets/recent/recent-07.jpg" alt="Recent WU singing close-up">
+                    <img src="assets/recent/recent-08.jpg" alt="Recent WU guitar performance with motion blur">
+                    <img src="assets/recent/recent-13.jpg" alt="Recent WU singing side profile">
+                    <img src="assets/recent/recent-15.jpg" alt="Recent WU and band under blue stage light">
+                    <img src="assets/recent/recent-16.jpg" alt="Recent drum close-up">
+                    <img src="assets/recent/recent-03.jpg" alt="Recent WU from behind at microphone">
+                    <img src="assets/recent/recent-04.jpg" alt="Recent bassist close-up">
+                    <img src="assets/recent/recent-05.jpg" alt="Recent backstage band moment with motion light">
+                    <img src="assets/recent/recent-09.jpg" alt="Recent red motion stage image">
+                    <img src="assets/recent/recent-10.jpg" alt="Recent guitar detail in black and white">
+                    <img src="assets/recent/recent-12.jpg" alt="Recent guitarist under red light">
+                    <img src="assets/recent/recent-14.jpg" alt="Recent WU singing under red light">
+                  </div>
+                  <button class="gallery-more" type="button" data-gallery-more aria-label="Show more recent photos">
+                    <span aria-hidden="true">+</span>
+                  </button>
+                </div>
+
+                <div class="photo-group">
+                  <p class="section-kicker" data-i18n="archiveKicker">Archive</p>
+                  <div class="archive-grid collapsible-gallery" data-gallery data-initial-rows="2">
+                    <img src="assets/archive/archive-01.jpg" alt="Older live performance with guitar and drums">
+                    <img src="assets/archive/archive-03.jpg" alt="Older band performance under red lights">
+                    <img src="assets/archive/archive-04.jpg" alt="Older band stage with intense red lighting">
+                    <img src="assets/archive/archive-05.jpg" alt="Older guitarist close-up on stage">
+                    <img src="assets/archive/archive-06.jpg" alt="Heated Heart image">
+                    <img src="assets/archive/archive-07.jpg" alt="Older vocal performance with drummer behind">
+                    <img src="assets/archive/archive-08.jpg" alt="Older group photo with audience after a show">
+                    <img src="assets/archive/archive-09.jpg" alt="Older guitar performance close-up">
+                    <img src="assets/archive/archive-10.jpg" alt="Older wide livehouse performance">
+                    <img src="assets/archive/archive-11.jpg" alt="Older vocalist close-up at microphone">
+                    <img src="assets/archive/archive-12.jpg" alt="Older silhouette profile on stage">
+                    <img src="assets/archive/archive-13.jpg" alt="Older vocalist and guitarist under warm lights">
+                    <img src="assets/archive/archive-14.jpg" alt="Older guitarist and vocalist on stage">
+                    <img src="assets/archive/archive-15.jpg" alt="Older vocalist close-up with handheld microphone">
+                    <img src="assets/archive/archive-16.jpg" alt="Older singer close-up during performance">
+                    <img src="assets/archive/archive-17.jpg" alt="Older singer playing guitar at microphone">
+                    <img src="assets/archive/archive-18.jpg" alt="Older stage performance with orange lighting">
+                    <img src="assets/archive/archive-19.jpg" alt="Older vocalist side view on stage">
+                    <img src="assets/archive/archive-20.jpg" alt="Older full-band stage performance with backdrop">
+                  </div>
+                  <button class="gallery-more" type="button" data-gallery-more aria-label="Show more archive photos">
+                    <span aria-hidden="true">+</span>
+                  </button>
+                </div>
+              </div>
+            </details>
+          </article>
+
+          <article id="rampant-profile" class="compact-column rampant-compact" data-section-label="The Rampant">
+            <img class="rampant-mark" src="assets/wu-rampant-logo-web.png" alt="WU The Rampant logo">
+            <p class="section-kicker" data-i18n="rampantKicker">The Rampant</p>
+            <h2 data-i18n="trName">WU &amp; The Rampant</h2>
+            <p data-i18n="trCompactCopy">
+              Debut original EP blending rock, metal, progressive and gothic elements.
+            </p>
+            <div class="tr-soon">
+              <img class="ep-cover" src="assets/the-rampant-ep-cover.png" alt="Within The Dream EP cover">
+              <p class="work-type" data-i18n="rampantWorkType">Within The Dream</p>
+              <h3 data-i18n="comingSoonTitle">Coming Soon</h3>
+              <p data-i18n="comingSoonCopy">
+                Debut material in progress.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <section id="events" class="events-section" data-section-label="Events">
+          <div class="events-head">
+            <p class="section-kicker" data-i18n="eventsKicker">Events</p>
+            <h2 data-i18n="eventsTitle">Events</h2>
+          </div>
+          <div class="events-layout">
+            <div class="events-column events-upcoming">
+              <p class="event-heading" data-i18n="upcomingEvents">Upcoming</p>
+              <article class="event-card event-card-record">
+                <img src="assets/the-rampant-ep-cover.png" alt="Within The Dream EP cover">
+                <div>
+                  <p class="work-type" data-i18n="eventRecordTag">Record</p>
+                  <h3>Within The Dream</h3>
+                  <p data-i18n="eventRecordCopy">WU &amp; The Rampant new EP.</p>
+                </div>
+              </article>
+            </div>
+            <div class="events-column events-past">
+              <p class="event-heading" data-i18n="pastEvents">Past</p>
+              <div class="event-grid">
+                <article class="event-card">
+                  <img src="assets/event-they-call-wu.jpg" alt="They Call WU event poster">
+                  <div>
+                    <p class="work-type" data-i18n="eventLiveWuTag">Live · WU</p>
+                    <h3>They Call WU</h3>
+                    <p data-i18n="eventLiveWuCopy">WU personal event.</p>
+                  </div>
+                </article>
+                <article class="event-card">
+                  <img src="assets/event-hidden-track.jpg" alt="Hidden Track event poster">
+                  <div>
+                    <p class="work-type" data-i18n="eventLiveRampantTag">Live · The Rampant</p>
+                    <h3>Hidden Track</h3>
+                    <p data-i18n="eventLiveRampantCopy">The Rampant event.</p>
+                  </div>
+                </article>
+                <article class="event-card">
+                  <img src="assets/event-wu-record.jpg" alt="They Call WU record artwork">
+                  <div>
+                    <p class="work-type" data-i18n="eventRecordWuTag">Record · WU</p>
+                    <h3>They Call WU</h3>
+                    <p data-i18n="eventRecordWuCopy">WU record.</p>
+                  </div>
+                </article>
+                <article class="event-card">
+                  <img src="assets/event-phoenix-bar.jpg" alt="Phoenix Bar singing competition poster">
+                  <div>
+                    <p class="work-type" data-i18n="eventPhoenixTag">Event · WU</p>
+                    <h3>Phoenix Bar</h3>
+                    <p data-i18n="eventPhoenixCopy">Singing competition.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div id="contact" class="compact-contact" data-section-label="Contact">
+          <div class="contact-layout">
+            <div>
+              <p class="section-kicker" data-i18n="contactKicker">Contact</p>
+              <h2 data-i18n="contactTitle">Booking / Releases / Collaboration</h2>
+            </div>
+            <div class="contact-links">
+              <div class="direct-links">
+                <a href="mailto:wbc1144874997@gmail.com">wbc1144874997@gmail.com</a>
+                <a href="tel:+447776988181">07776 988181</a>
+                <a href="https://wa.me/447776988181">WhatsApp</a>
+              </div>
+              <div class="platform-links" aria-label="Music and social platforms">
+                <a class="platform-link spotify-link" href="https://open.spotify.com/artist/6f2PVjcsU6NkULx05cOO6O?si=g-h91qUXRGONxNbypBCmcA" aria-label="WU Spotify">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M7.2 9.4c3.5-1 6.7-.7 9.7.9"></path>
+                    <path d="M7.8 12.3c2.8-.8 5.3-.6 7.6.7"></path>
+                    <path d="M8.4 15c2-.5 3.8-.4 5.5.5"></path>
+                  </svg>
+                  <span>Spotify</span>
+                </a>
+                <a class="platform-link apple-link" href="https://music.apple.com/cn/artist/wu/1855197101?l=en-GB" aria-label="WU Apple Music">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M9 18.2c0 1.2-1.2 2.2-2.7 2.2s-2.7-.8-2.7-2 1.2-2.2 2.7-2.2c.7 0 1.3.2 1.7.5V6.3l10.4-2v11.6c0 1.2-1.2 2.2-2.7 2.2s-2.7-.8-2.7-2 1.2-2.2 2.7-2.2c.7 0 1.3.2 1.7.5V8.1L9 9.7v8.5z"></path>
+                  </svg>
+                  <span>Apple Music</span>
+                </a>
+                <a class="platform-link qq-link" href="https://c6.y.qq.com/base/fcgi-bin/u?__=Ecum7kCyHno5" aria-label="WU QQ Music">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <text x="12" y="15.2">QQ</text>
+                  </svg>
+                  <span>QQ Music</span>
+                </a>
+                <a class="platform-link netease-link" href="https://163cn.tv/bavxg5wc" aria-label="WU NetEase Cloud Music">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <text x="12" y="15.2">云</text>
+                  </svg>
+                  <span>NetEase</span>
+                </a>
+                <a class="platform-link instagram-link" href="https://www.instagram.com/wu_serum?igsh=MWhvdmV5Mm9vY3J2dg%3D%3D&utm_source=qr" aria-label="WU Instagram">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="4" y="4" width="16" height="16" rx="5"></rect>
+                    <circle cx="12" cy="12" r="3.4"></circle>
+                    <circle cx="17" cy="7" r="1"></circle>
+                  </svg>
+                  <span>WU Instagram</span>
+                </a>
+                <a class="platform-link instagram-link wide" href="https://www.instagram.com/the_rampant?igsh=MW1kNHVxYjB3eXJpYQ%3D%3D&utm_source=qr" aria-label="The Rampant Instagram">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="4" y="4" width="16" height="16" rx="5"></rect>
+                    <circle cx="12" cy="12" r="3.4"></circle>
+                    <circle cx="17" cy="7" r="1"></circle>
+                  </svg>
+                  <span>The Rampant Instagram</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      const translations = {
+        navHome: "首页",
+        navWuRampant: "WU & The Rampant（蔓生乐队）",
+        navWu: "WU",
+        navRampant: "The Rampant",
+        navWork: "作品",
+        navEvents: "活动",
+        navContact: "联系",
+        heroKicker: "Bingchen Wu 的音乐计划",
+        heroCopy: "WU / The Rampant（蔓生乐队）",
+        listenButton: "收听",
+        listenKicker: "流媒体",
+        wuPanelKicker: "个人",
+        wuPanelCopy: "WU，现居英国伯明翰。歌手、音乐人、吉他手、词曲作者、作曲者与制作人。",
+        enterWu: "进入 WU",
+        rampantPanelKicker: "乐队",
+        rampantPanelCopy: "WU & The Rampant（蔓生乐队）。Rock / Metal。",
+        enterRampant: "进入 The Rampant",
+        rampantName: "The Rampant（蔓生乐队）",
+        compactKicker: "折叠资料",
+        compactTitle: "目录",
+        eventsKicker: "活动",
+        eventsTitle: "活动",
+        accordionBio: "人物介绍",
+        accordionWorks: "Music&Work",
+        upcomingEvents: "即将",
+        pastEvents: "往期",
+        eventRecordTag: "唱片",
+        eventRecordCopy: "WU & The Rampant（蔓生乐队）新 EP。",
+        eventLiveWuTag: "Live · WU",
+        eventLiveWuCopy: "WU 个人活动。",
+        eventLiveRampantTag: "Live · The Rampant",
+        eventLiveRampantCopy: "The Rampant（蔓生乐队）活动。",
+        eventRecordWuTag: "唱片 · WU",
+        eventRecordWuCopy: "WU 唱片。",
+        eventPhoenixTag: "活动 · WU",
+        eventPhoenixCopy: "全英歌手大赛。",
+        accordionPhotos: "现场照片",
+        wuProfileTitle: "艺术家、歌手、吉他手、词曲作者、作曲者与制作人。",
+        wuProfileCopy: "现居英国伯明翰的独立音乐人。",
+        wuProfileCard1Title: "音乐语言",
+        wuProfileCard1Copy: "Rock、Pop、Metal、R&B。",
+        wuProfileCard2Title: "声音与情绪",
+        wuProfileCard2Copy: "旋律、能量、情绪。",
+        wuProfileCard3Title: "现场",
+        wuProfileCard3Copy: "音乐节、Livehouse、原创现场。",
+        wuProfileCard4Title: "交互 / 设计",
+        wuProfileCard4Copy: "视觉音频系统、交互设计与舞台视觉身份。",
+        rampantProfileTitle: "WU & The Rampant（蔓生乐队）是一支围绕 WU 原创写作与音乐愿景建立的摇滚/金属乐队。",
+        rampantProfileCopy: "乐队将重型音乐的力量、强旋律和现代制作元素放在一起，目前正在筹备首张原创 EP、后续现场和未来发布。",
+        trName: "WU & The Rampant（蔓生乐队）",
+        rampantKicker: "The Rampant（蔓生乐队）",
+        trCompactCopy: "首张融合了摇滚、金属、前卫和哥特元素的原创 EP。",
+        recentKicker: "近期现场",
+        recentTitle: "较新的影像放在照片叙事前段。",
+        recentFeatureTitle: "当前阶段的舞台语言：黑白、运动、近距离和现场存在感。",
+        archiveKicker: "旧照档案",
+        archiveTitle: "旧照片往后放，作为时间线与视觉资料。",
+        archiveFeatureKicker: "旧照片",
+        archiveFeatureTitle: "早期空间、红色灯光、近景和乐队瞬间。",
+        archiveFeatureCopy: "这一组照片作为视觉档案，放在当前 WU & The Rampant（蔓生乐队）的身份之后。",
+        wuWorksTitle: "WU 个人作品。",
+        workCategoryMusic: "音乐",
+        workCategoryInteractive: "交互音画",
+        workCategoryComposition: "作曲",
+        workCategoryProject: "项目",
+        workCategoryCollab: "与其他艺术家合作",
+        workYoungerCopy: "以反恐为主题的摇滚作品。",
+        workHeatedCopy: "偏 Soft Rock 气质的音乐发行。",
+        workLoveCopy: "面向流媒体平台的流行音乐作品。",
+        workWindowCopy: "视觉与音频互相响应的互动程序。",
+        workWhaCopy: "围绕音乐交互建立的视觉/音频程序。",
+        workGatesCopy: "实验作曲作品。",
+        workFluentCopy: "实验性、伪氛围的大提琴融合创作。",
+        workAloneCopy: "Jazz Band EP 制作、录音与混音。",
+        rampantWorkType: "Within The Dream",
+        comingSoonTitle: "敬请期待",
+        comingSoonCopy: "首批作品筹备中。",
+        contactKicker: "联系",
+        contactTitle: "演出 / 发行 / 合作"
+      };
+
+      const english = new Map();
+      const languageToggle = document.querySelector("[data-lang-toggle]");
+
+      document.querySelectorAll("[data-i18n]").forEach((element) => {
+        english.set(element, element.innerHTML);
+      });
+
+      const setLanguage = (language) => {
+        const useChinese = language === "zh";
+        document.documentElement.lang = useChinese ? "zh" : "en";
+        document.body.dataset.language = language;
+        document.querySelectorAll("[data-i18n]").forEach((element) => {
+          const key = element.dataset.i18n;
+          element.innerHTML = useChinese ? translations[key] : english.get(element);
+        });
+        languageToggle.textContent = useChinese ? "English" : "中文";
+        languageToggle.setAttribute(
+          "aria-label",
+          useChinese ? "Switch to English" : "Switch to Chinese"
+        );
+      };
+
+      languageToggle.addEventListener("click", () => {
+        setLanguage(document.body.dataset.language === "zh" ? "en" : "zh");
+      });
+
+      setLanguage("en");
+
+      const sectionFootnote = document.querySelector("[data-section-footnote]");
+      const sectionTargets = document.querySelectorAll("[data-section-label]");
+      const sectionObserver = new IntersectionObserver(
+        (entries) => {
+          const visible = entries
+            .filter((entry) => entry.isIntersecting)
+            .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+          if (visible) {
+            sectionFootnote.textContent = visible.target.dataset.sectionLabel;
+          }
+        },
+        { threshold: [0.2, 0.45, 0.7], rootMargin: "-18% 0px -42% 0px" }
+      );
+
+      sectionTargets.forEach((element) => sectionObserver.observe(element));
+
+      const revealTargets = document.querySelectorAll(
+        ".entry-panel, .compact-head, .compact-column-head, .info-accordion, .compact-profile-grid article, .work-group, .events-head, .events-column, .event-card, .rampant-compact, .ep-cover, .compact-contact"
+      );
+
+      revealTargets.forEach((element, index) => {
+        element.classList.add("reveal");
+        element.style.setProperty("--reveal-delay", `${Math.min(index % 6, 5) * 70}ms`);
+      });
+
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.18, rootMargin: "0px 0px -8% 0px" }
+      );
+
+      revealTargets.forEach((element) => revealObserver.observe(element));
+
+      const listenDock = document.querySelector("[data-listen-dock]");
+      const listenToggle = document.querySelector("[data-listen-toggle]");
+      const listenPanel = document.querySelector("[data-listen-panel]");
+      const listenCloseButtons = document.querySelectorAll("[data-listen-close]");
+
+      const setListenPanel = (open) => {
+        listenDock.classList.toggle("is-open", open);
+        listenPanel.hidden = !open;
+        listenToggle.setAttribute("aria-expanded", String(open));
+      };
+
+      listenToggle.addEventListener("click", () => setListenPanel(listenPanel.hidden));
+      listenCloseButtons.forEach((button) => {
+        button.addEventListener("click", () => setListenPanel(false));
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && listenDock.classList.contains("is-open")) {
+          setListenPanel(false);
+        }
+      });
+
+      const heroVideo = document.querySelector("#hero-video");
+      const soundToggle = document.querySelector(".sound-toggle");
+
+      soundToggle.addEventListener("click", async () => {
+        heroVideo.muted = !heroVideo.muted;
+        heroVideo.volume = heroVideo.muted ? 0 : 1;
+        soundToggle.setAttribute("aria-pressed", String(!heroVideo.muted));
+        soundToggle.setAttribute(
+          "aria-label",
+          heroVideo.muted ? "Turn sound on" : "Turn sound off"
+        );
+
+        if (heroVideo.paused) {
+          try {
+            await heroVideo.play();
+          } catch {
+            heroVideo.muted = true;
+            heroVideo.volume = 0;
+            soundToggle.setAttribute("aria-pressed", "false");
+            soundToggle.setAttribute("aria-label", "Turn sound on");
+          }
+        }
+      });
+
+      const setupGallery = (gallery) => {
+        const button = gallery.parentElement.querySelector("[data-gallery-more]");
+        const images = Array.from(gallery.querySelectorAll("img"));
+        let visibleCount = 0;
+
+        const getColumns = () => {
+          const columns = getComputedStyle(gallery).gridTemplateColumns;
+          return Math.max(1, columns.split(" ").filter(Boolean).length);
+        };
+
+        const render = () => {
+          images.forEach((image, index) => {
+            image.classList.toggle("is-hidden", index >= visibleCount);
+          });
+          button.classList.toggle("is-hidden", visibleCount >= images.length);
+        };
+
+        const reset = () => {
+          const rows = Number(gallery.dataset.initialRows || 2);
+          visibleCount = Math.min(images.length, getColumns() * rows);
+          render();
+        };
+
+        button.addEventListener("click", () => {
+          visibleCount = Math.min(images.length, visibleCount + getColumns());
+          render();
+        });
+
+        reset();
+        window.addEventListener("resize", reset);
+      };
+
+      document.querySelectorAll("[data-gallery]").forEach(setupGallery);
+    </script>
+  </body>
+</html>
